@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
     <main>
-        <h1>Formulário</h1>
-        <form>
-            <div>
-                <label for="texto">Nome:</label>
-                <input type="text" id="texto" placeholder="Nomes">
-            </div>
+      <h1>Dados Pessoais:</h1>
+      <form>
+        <div>
+          <label for="nomeAluno">Nome do Aluno</label>
+          <input type="text" id="nomeAluno" name="name" />
+        </div>
 
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password">
-            </div>
-        </form>
+        <div>
+          <label for="dateNasc">Data Nascimento</label>
+          <input type="text" id="dateNasc" name="day" placeholder="dd" />
+          <input type="text" id="dateNasc" name="month" placeholder="mm" />
+          <input type="text" id="dateNasc" name="year" placeholder="aaaa" />
+        </div>
+
+        <div>
+          <label for="motherName">Nome da Mãe</label>
+          <input type="text" id="motherName" name="nomeDaMãe" />
+        </div>
+        <div>
+          <label for="fatherName">Nome do Pai</label>
+          <input type="text" id="fatherName" name="nomeDoPai" />
+        </div>
+
+        <div>
+          <label for="number">Telefone: DDD(</label>
+          <input type="text" id="number" name="ddd" size="1" />
+          <label for="phone">) Tel:</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+
+        <div>
+          <label for="mail">Email</label>
+          <input type="text" id="mail" name="mail" />
+        </div>
+      </form>
+
+      <h1>Informações da Matrícula:</h1>
+
+      <form id="segundoForm">
+        <div>
+          <label for="class">Série</label>
+          <br />
+          <select name="serie" id="class">
+            <option value="#">Pré-escola</option>
+            <option value="#">Ensino Fundamental</option>
+            <option value="#">Ensino Médio</option>
+            <option value="#">Ensino Superior</option>
+          </select>
+        </div>
+
+        <div>
+          <p>Turno</p>
+          <input type="radio" id="manha" name="turno" />
+          <label for="manha">Manhã</label>
+          <br />
+          <input type="radio" id="tarde" name="turno" />
+          <label for="tarde">Tarde</label>
+        </div>
+
+        <div>
+          <p>Atividades Extracurriculáres</p>
+          <input type="checkbox" id="art" name="ativi" />
+          <label for="art">Artes</label>
+          <br />
+          <input type="checkbox" id="soccer" name="ativi" />
+          <label for="soccer">Futebol</label>
+          <br />
+          <input type="checkbox" id="info" name="ativi" />
+          <label for="info">Informática</label>
+          <br />
+          <input type="checkbox" id="judo" name="ativi" />
+          <label for="judo">Judô</label>
+          <br />
+          <input type="checkbox" id="music" name="ativi" />
+          <label for="music">Música</label>
+          <br />
+          <input type="checkbox" id="paint" name="ativi" />
+          <label for="paint">Pintura</label>
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>
