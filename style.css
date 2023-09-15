@@ -3,3 +3,7 @@
     justify-content: space-between;
 }
 
+label, input[type="checkbox"]{
+    cursor: pointer;
+}
+
