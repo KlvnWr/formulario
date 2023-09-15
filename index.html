@@ -12,14 +12,18 @@
       <form>
         <div>
           <label for="nomeAluno">Nome do Aluno</label>
-          <input type="text" id="nomeAluno" name="name" />
+          <input type="text" id="nomeAluno" name="name" required />
         </div>
 
         <div>
           <label for="dateNasc">Data Nascimento</label>
-          <input type="text" id="dateNasc" name="day" placeholder="dd" />
-          <input type="text" id="dateNasc" name="month" placeholder="mm" />
-          <input type="text" id="dateNasc" name="year" placeholder="aaaa" />
+          <input
+            type="date"
+            id="dateNasc"
+            name="day"
+            placeholder="date"
+            value="data"
+          />
         </div>
 
         <div>
@@ -33,14 +37,14 @@
 
         <div>
           <label for="number">Telefone: DDD(</label>
-          <input type="text" id="number" name="ddd" size="1" />
+          <input type="text" id="number" name="ddd" size="1" required />
           <label for="phone">) Tel:</label>
-          <input type="text" id="phone" name="phone" />
+          <input type="text" id="phone" name="phone" required />
         </div>
 
         <div>
           <label for="mail">Email</label>
-          <input type="text" id="mail" name="mail" />
+          <input type="text" id="mail" name="mail" required />
         </div>
       </form>
 
